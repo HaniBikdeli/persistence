@@ -1,0 +1,15 @@
+<Configuration status="info" name="persistence" packages="">
+    <Appenders>
+        <Console name="stdout" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %p %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="dev.hanibikdeli.log.AbstractLogger" level="debug">
+            <AppenderRef ref="stdout"/>
+        </Logger>
+        <Root level="info">
+            <AppenderRef ref="stdout"/>
+        </Root>
+    </Loggers>
+</Configuration>

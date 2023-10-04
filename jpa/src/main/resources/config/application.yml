@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/presistence
+    username: root
+    password: root
+  flyway:
+    baseline-on-migrate: true
